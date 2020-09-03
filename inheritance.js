@@ -9,6 +9,9 @@ Rectangle.prototype.area = function() {
  * Create a Square class that inherits from Rectangle and implement its class constructor
  */
  class Square extends Rectangle {
+    h = 0;
+    w = 0;
+     
         constructor(s) {
             super(s);
             this.h = s;

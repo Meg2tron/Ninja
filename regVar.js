@@ -4,7 +4,7 @@ function regexVar() {
      * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
      */
     
-    let re = /^(a|e|i|o|u).*\1$/;
+    const re = /^(a|e|i|o|u).*\1$/;
 
     /*
      * Do not remove the return statement

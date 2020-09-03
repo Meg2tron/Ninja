@@ -6,7 +6,9 @@
 *   
 *	Return a number denoting the rectangle's area.
 **/
-function getArea(length, width) {
+function getArea(length, width){
+    if(length===undefined || width===undefined || isNaN(length) || isNaN(width))
+        throw (new Error('Provide valid inputs'))
     return length*width;
 }
 
@@ -19,5 +21,7 @@ function getArea(length, width) {
 *	Return a number denoting the perimeter of a rectangle.
 **/
 function getPerimeter(length, width) {
+    if(length===undefined || width===undefined || isNaN(length) || isNaN(width))
+        throw (new Error('Provide valid inputs'))
     return 2*(length+width);
 }

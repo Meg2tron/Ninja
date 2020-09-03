@@ -3,8 +3,9 @@
  * Print your output using 'console.log()'.
  */
 function vowelsAndConsonants(s) {
-    var consonant = [];
-
+    let consonant = [];
+    if(!s instanceof String || typeof s!== 'string')
+        throw (new Error('Provide valid input'))
     for(let i=0;i<s.length;i++)
     {
         if(s[i]==='a' || s[i]==='e' || s[i]==='i' || s[i]==='o' || s[i]==='u')

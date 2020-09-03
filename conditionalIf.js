@@ -2,6 +2,8 @@
 
 function getGrade(score) {
     let grade;
+    if(grade===undefined || isNaN(grade))
+        throw (new Error('Provide valid inputs'))
     // Write your code here
     if(score>25 && score<=30)
     grade = 'A'

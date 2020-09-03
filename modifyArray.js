@@ -5,5 +5,9 @@
  * nums: An array of numbers.
  */
 function modifyArray(nums) {
+    if(nums.some(isNaN))
+    {
+        throw (new Error("Provide number array"))        
+    }
     return nums.map(n=>n = (n%2==0)?n*2:n*3)
 }

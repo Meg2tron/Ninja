@@ -4,16 +4,20 @@
  * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
  */
 class Polygon{
-    
+    nums 
     constructor(nums)
     {
+        if(nums===undefined || isNaN(nums))
+        throw (new Error('Provide valid inputs'))
         this.nums = nums;
     }
 
-    perimeter()
+    perimeter(...nums)
     {
         let sum = 0;
-        this.nums.forEach(n=>{
+        nums.forEach(n=>{
+            if(n===undefined || isNaN(n))
+        throw (new Error('Provide valid inputs'))
             sum+=n;
         })
         return sum;

@@ -1,4 +1,4 @@
-*   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
+/*   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
 *   Print three lines:
 *   1. The sum of 'firstInteger' and the Number representation of 'secondInteger'.
 *   2. The sum of 'firstDecimal' and the Number representation of 'secondDecimal'.
@@ -10,6 +10,11 @@
 *   secondString - A string consisting of one or more space-separated words.
 **/
 function performOperation(secondInteger, secondDecimal, secondString) {
+    
+
+    if(isNaN(secondDecimal) || (secondDecimal - Math.floor(secondDecimal)) === 0 || isNaN(secondInteger) || typeof secondString !== 'string')
+        throw (new Error("Enter valid inputs"))
+
     const firstInteger = 4;
     console.log(firstInteger+ +secondInteger)
     const firstDecimal = 4.0;

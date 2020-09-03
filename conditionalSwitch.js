@@ -1,6 +1,7 @@
 function getLetter(s) {
-    let letter;
-
+    let letter = 'D';
+    if (typeof s !== 'string' || s instanceof String)
+        throw (new Error('Provide valid inputs'))
     switch(s[0])
     {
         case 'a':case 'e':case 'i':case 'o': case 'u': letter= 'A'; break;

@@ -6,6 +6,8 @@
 function getSecondLargest(nums) {
     let first = nums[0]; let second = -1;
 
+    if(nums.some(isNaN))
+        throw new Error("Please provide number array")
     for(let i = 0; i < nums.length; i++)
     {
         if (nums[i] > first) {

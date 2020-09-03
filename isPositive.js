@@ -6,10 +6,12 @@
  * If 'a' is negative, throw an Error with the message "Negative Error"
  */
 function isPositive(a) {
-    if(a > 0){
+    if(isNaN(a))
+        throw(new Error("Enter input as number"))
+    
+        if(a > 0){
         return 'YES';
     }
-    else{
-        throw (a === 0 ? new Error('Zero Error') : new Error('Negative Error'));
-    }
+    throw (a === 0 ? new Error('Zero Error') : new Error('Negative Error'));
+    
 }
