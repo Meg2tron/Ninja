@@ -4,7 +4,7 @@
 *   @return {Number} The second largest number in the array.
 **/
 function getSecondLargest(nums) {
-    let first = nums[0]; let second = -1;
+    let first = nums[0]; let second = -Infinity;
 
     if(nums.some(isNaN))
         throw new Error("Please provide number array")
